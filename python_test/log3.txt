@@ -1,0 +1,34 @@
+You have successfully connect to 192.168.56.101
+
+
+Info: The configuration takes effect on the current user terminal interface only.
+<LSW1>screen-length 0 temporary
+Info: The configuration takes effect on the current user terminal interface only.
+<LSW1>dis lldp nei bri
+Error: Global LLDP is not enabled.
+<LSW1>
+You have successfully connect to 192.168.56.200
+
+Info: The configuration takes effect on the current user terminal interface only.
+<LSW3>screen-length 0 temporary
+Info: The configuration takes effect on the current user terminal interface only.
+<LSW3>dis lldp nei bri
+Error: Global LLDP is not enabled.
+<LSW3>
+You have successfully connect to 192.168.56.101
+
+
+Info: The configuration takes effect on the current user terminal interface only.
+<LSW1>screen-length 0 temporary
+Info: The configuration takes effect on the current user terminal interface only.
+<LSW1>dis lldp nei bri
+Error: Global LLDP is not enabled.
+<LSW1>
+You have successfully connect to 192.168.56.200
+
+Info: The configuration takes effect on the current user terminal interface only.
+<LSW3>screen-length 0 temporary
+Info: The configuration takes effect on the current user terminal interface only.
+<LSW3>dis lldp nei bri
+Error: Global LLDP is not enabled.
+<LSW3>

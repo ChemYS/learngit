@@ -16,13 +16,13 @@ import json
 
 start_time=time.time()
 ip_file = sys.argv[1]  #python3.8 test.py ip 3750.txt cmd 3750.txt #sys.argv[0] 指文件名，[1]后面携带的参数
-log4 = open(r"D:\Python_script\test\log4.txt",mode="a",encoding="utf-8")
+log4 = open(r"C:\Users\ChemYS\learngit\python_test\log4.txt",mode="a",encoding="utf-8")
 iplist =open(ip_file, 'r')
 driver=get_network_driver('huawei_vrp')
 
 def login_device(ip):
-    #sw1=driver(ip,'python','Huawei@123')
-    sw1=driver(ip,'admin','Huawei12#$')
+    sw1=driver(ip,'python','Huawei@123')
+    #sw1=driver(ip,'admin','Huawei12#$')
     #sw1=driver(ip,'admin','zsyyNS@2023')
     sw1.open()
     time.sleep(2)
@@ -53,5 +53,5 @@ if __name__ == '__main__':
     print( '总共运行了%d second' %(time.time()-start_time))
     print (f"程序于{time.strftime('%X')}执行结束")
 '''
-& C:/Users/ChemYS/AppData/Local/Programs/Python/Python311/python.exe d:/Python_script/test/test4.py d:/Python_script/test/ip_list4.txt
+& C:/Users/ChemYS/AppData/Local/Programs/Python/Python311/python.exe c:/Users/ChemYS/learngit/python_test/test4.py c:/Users/ChemYS/learngit/python_test/ip_list4.txt
 '''

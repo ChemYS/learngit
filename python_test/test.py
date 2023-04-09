@@ -16,7 +16,7 @@ for line in iplist.readlines():
     ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     ssh_client.connect(hostname=ip,username=username,password=password)
     #time.sleep(1)
-    log = open(r"D:\Python_script\test\log.txt",mode="a",encoding="utf-8")
+    log = open(r"C:\Users\ChemYS\learngit\python_test\log1.txt",mode="a",encoding="utf-8")
     print("You have successfully connect to", ip,file = log)
     command= ssh_client.invoke_shell()
     cmdlist =open(cmd_file, 'r')
@@ -33,5 +33,5 @@ for line in iplist.readlines():
 
 
 '''
-& C:/Users/ChemYS/AppData/Local/Programs/Python/Python311/python.exe d:/Python_script/test/test.py d:/Python_script/test/ip_list.txt d:/Python_script/test/cmd_list.txt
+& C:/Users/ChemYS/AppData/Local/Programs/Python/Python311/python.exe c:/Users/ChemYS/learngit/python_test/test.py c:/Users/ChemYS/learngit/python_test/ip_list1.txt c:/Users/ChemYS/learngit/python_test/cmd_list1.txt
 '''

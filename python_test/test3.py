@@ -11,7 +11,7 @@ from termcolor import colored
 
 start_time=time.time()
 ip_file = sys.argv[1]  #python3.8 test.py ip 3750.txt cmd 3750.txt #sys.argv[0] 指文件名，[1]后面携带的参数
-log3 = open(r"D:\Python_script\test\log3.txt",mode="a",encoding="utf-8")
+log3 = open(r"C:\Users\ChemYS\learngit\python_test\log3.txt",mode="a",encoding="utf-8")
 iplist =open(ip_file, 'r')
 '''
 a=[]
@@ -22,11 +22,11 @@ def login_device(ip,*cmd):
     huawei={
     'device_type':'huawei',
     'host': ip,
-    'username':'admin',
+    #'username':'admin',
     #'password':'Huawei12#$'#FT
-    'password':'zsyyNS@2023'
-    #'username':'python',#ensp测试
-    #'password':'Huawei@123'#ensp测试
+    #'password':'zsyyNS@2023'
+    'username':'python',#ensp测试
+    'password':'Huawei@123'#ensp测试
     }
     huawei_connect=ConnectHandler(**huawei)
     time.sleep(2)
@@ -37,7 +37,7 @@ def login_device(ip,*cmd):
     huawei_connect.disconnect()
 if __name__ == '__main__':
     print(f"程序于{time.strftime('%X')}开始执行")
-    p = Pool(20)
+    p = Pool(1)
     for i in iplist:
         #ip1 = a[i]
         #test = p.apply_async(login_device,args=(ip1,'screen-length 0 temporary','dis lldp nei bri'))
@@ -48,5 +48,5 @@ if __name__ == '__main__':
     print( '总共运行了%d second' %(time.time()-start_time))
     print (f"程序于{time.strftime('%X')}执行结束")
 '''
-& C:/Users/ChemYS/AppData/Local/Programs/Python/Python311/python.exe d:/Python_script/test/test3.py d:/Python_script/test/ip_list3.txt d:/Python_script/test/cmd_list3.txt
+& C:/Users/ChemYS/AppData/Local/Programs/Python/Python311/python.exe c:/Users/ChemYS/learngit/python_test/test3.py c:/Users/ChemYS/learngit/python_test/ip_list3.txt
 '''
