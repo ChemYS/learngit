@@ -1,4 +1,5 @@
-e0:be:03:5d:af:94
-e0:be:03:5d:cd:3d
-e0:be:03:5d:b7:c6
-e0:be:03:5d:af:96
+def poetry():
+    print("床前明月光，疑是地上霜。\n举头望明月,低头思故乡。")
+
+poetry()
+print("test")
