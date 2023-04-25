@@ -1,8 +1,6 @@
-import paramiko
+
 from netmiko import ConnectHandler
 import pandas as pd
-import nmap
-import requests
 import time
 from multiprocessing import Pool
 
