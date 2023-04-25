@@ -1,6 +1,6 @@
 # 授人以鱼
 # 利用from.....import....导入Image模块和ImageDraw模块
-from PIL import Image, ImageDraw
+from PIL import Image
 # 导入face_recognition模块
 from face_recognition import *
 # TODO 调用face_recognition模块的load_image_file()方法,将/Users/girls.jpg路径下的图片文件加载到numpy数组中
@@ -34,4 +34,4 @@ ran_photo = "C:/Users/ChemYS/learngit/yequbiancheng/2_quweigongju/60/file/" + ra
 pic = Image.open(ran_photo).resize((1000,1000))
 img_back = Image.open("C:/Users/ChemYS/learngit/yequbiancheng/2_quweigongju/60/back.png").resize((2000,2000))
 img_back.paste(pic,(500,350))
-img_back.save("C:/Users/ChemYS/learngit/yequbiancheng/2_quweigongju/60/new.png")
+img_back.save("C:/Users/ChemYS/learngit/yequbiancheng/2_quweigongju/60/success.png")

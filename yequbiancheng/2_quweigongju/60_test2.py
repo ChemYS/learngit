@@ -9,7 +9,7 @@ face_locations = face_locations(image)
 
 n = 1
 for face_location in face_locations:
-    print(face_location)
+    #print(face_location)
     top, right, bottom, left = face_location
     face_image = image[top:bottom, left:right]
     pil_image = Image.fromarray(face_image)
